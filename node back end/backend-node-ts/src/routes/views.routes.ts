@@ -9,5 +9,10 @@ router.get('/', (req, res) => {
     mensaje: 'Renderizando vistas con Handlebars 🚀',
   });
 });
-
+router.get('/about', (req, res) => {
+  res.render('about', {
+    titulo: 'About',
+    mensaje: 'Esta es la página About 🚀',
+  });
+});
 export default router;
